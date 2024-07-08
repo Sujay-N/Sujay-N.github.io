@@ -4,6 +4,16 @@ import mixpanel from 'mixpanel-browser';
 // Near entry of your product, init Mixpanel
 mixpanel.init('4dc7b611a3b9f809a398afa860da3f50', {debug: true, track_pageview: true, persistence: 'localStorage'});
 
+
+mixpanel.identify('12345')
+ 
+mixpanel.people.set({ '$name': 'Jane Doe',
+                      '$email': 'jane.doe@example.com',
+                      'plan' : 'Premium'
+                      // Add anything else about the user here
+                      });
+
+
 ScrollReveal().reveal('.reveal1',{
     origin:'top',
     distance : "20px",

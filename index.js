@@ -2,7 +2,7 @@
 import mixpanel from 'mixpanel-browser';
  
 // Near entry of your product, init Mixpanel
-mixpanel.init('4dc7b611a3b9f809a398afa860da3f50', {debug: true, track_pageview: true, persistence: 'localStorage'});
+//mixpanel.init('4dc7b611a3b9f809a398afa860da3f50', {debug: true, track_pageview: true, persistence: 'localStorage'});
 mixpanel.init('4dc7b611a3b9f809a398afa860da3f50', {track_pageview: "https://sujay-n.github.io/"});
 mixpanel.track_pageview();
 
